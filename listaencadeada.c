@@ -106,22 +106,22 @@ void mostrar(struct no* l) {
 int main() {
     struct no* lista = criar_lista();
 
-    printf("Testando inserção:\n");
+    printf("Testando insercao:\n");
     inserir_posicao(&lista, 1, 10);
     inserir_posicao(&lista, 2, 20);
     inserir_posicao(&lista, 3, 30);
     inserir_posicao(&lista, 2, 15); // Inserir no meio
     mostrar(lista);
 
-    printf("\nTestando modificação:\n");
+    printf("\nTestando modificacao:\n");
     modificar(lista, 2, 25);
     mostrar(lista);
 
-    printf("\nTestando obtenção:\n");
-    printf("Elemento na posição 3: %d\n", obter(lista, 3));
-    printf("Elemento na posição 5 (inválido): %d\n", obter(lista, 5));
+    printf("\nTestando obtencao:\n");
+    printf("Elemento na posicao 3: %d\n", obter(lista, 3));
+    printf("Elemento na posicao 5 (invalido): %d\n", obter(lista, 5));
 
-    printf("\nTestando remoção:\n");
+    printf("\nTestando remocao:\n");
     remover_posicao(&lista, 2); // Remover do meio
     mostrar(lista);
     remover_posicao(&lista, 1); // Remover do início
